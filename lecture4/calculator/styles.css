@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Lighter shade for a modern look */
+    margin: 0;
+    color: #333; /* Default text color for consistency */
+}
+
+h1 {
+    margin-top: 20px; /* Ensures some space at the top */
+    color: #007bff; /* Theme color for the title for consistency */
+}
+
+.inputs, .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Slightly increased gap for better spacing */
+    margin-bottom: 25px; /* Slightly increased margin for better spacing */
+}
+
+.inputs input[type="number"], .result {
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    padding: 15px; /* Increased padding for better touch */
+    border-radius: 8px; /* More rounded corners for a modern look */
+    border: 2px solid #007bff; /* Thicker border with theme color */
+    background-color: #ffffff; /* Ensure background is white for inputs and result */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
+}
+
+.inputs input[type="number"]:hover, .result:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover for depth */
+}
+
+.buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px; /* More rounded corners for a modern look */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform to transitions */
+    flex-grow: 1;
+    outline: none; /* Remove outline to clean up focus state */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge buttons on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #007bff;
+    animation: bounce 1s ease infinite; /* Apply bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.inputs, .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.inputs input[type="number"], .result {
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputs input[type="number"]:hover, .result:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-grow: 1;
+    outline: none;
+    animation: strobing 0.5s infinite; /* Apply strobing animation */
+}
+
+@keyframes strobing {
+    0%, 100% { background-color: #ff1100; }
+    25% { background-color: #00b31e; }
+    50% { background-color: #88005b; }
+    75% { background-color: #005c5c; }
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    margin: 0;
+    font-size: 20px;
+}
